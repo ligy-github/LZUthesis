@@ -136,6 +136,24 @@
 \chapter{引言\label{chap:intro}}
 简述量子多体问题，引出量子杂质问题
 \section{量子杂质问题}
+量子杂质问题描述的是一个多体相互作用（通常为库仑相互作用或交换相互作用）发生在单个位点（杂质）上的系统，并且杂质与一个由宏观数量的无相互作用粒子组成的热库相互作用。
+\begin{figure}[!hb]
+\centering
+\includegraphics[width=0.4\textwidth]{QIM.png}
+\caption{量子杂质模型的示意图。系统包括了三部分:杂质部分、库、杂质与库的耦合。}
+\end{figure}
+热库的粒子可以是玻色子（声子、磁振子、粒子-空穴对等）也可以是费米子（导带电子等），杂质可以是真实的杂质（如在金Au中掺杂的铁Fe原子，在石墨烯上吸附的钴Co原子），也可能是与电磁场相作用的二能级原子，或表现为量子点的一块小的受限区域等。它们可以用近藤模型、安德森模型、自旋玻色模型等来描述，一般地表示为 $H = H_{\rm{imp}} + H_{\rm{bath}} + H_{\rm{hyb}}$, $H_{\rm{imp}}$ 为杂质电子哈密顿量，$H_{\rm{bath}}$ 表示库电子哈密顿量，$H_{\rm{hyb}}$ 表示杂质电子与库电子的耦合。
+本文以单杂质安德森模型为例进行说明，对于单杂质安德森模型：
+\[
+H_{\rm{imp}} = \sum_{\sigma} \varepsilon_{d\sigma}d^{\dag}_{\sigma}d_{\sigma} + Un_{d\uparrow}n_{d\downarrow},
+\]
+\[
+H_{\rm{bath}} = \sum_{k\sigma}\varepsilon_{k\sigma}c^{\dag}_{k\sigma}c_{k\sigma},
+\]
+\[
+H_{\rm{hyb}} = \sum_{k\sigma}(V_{k\sigma}c^{\dag}_{k\sigma}d_{k\sigma} + H.c.).
+\]
+其中，$d^{\dag}_{\sigma}(d_{\sigma})$为杂质电子的产生（湮灭）算符，$\varepsilon_{d\sigma}$表示杂质$d$电子自旋依赖的能级位置，$\sigma$为系统的自旋指标，取值为$\uparrow$或$\downarrow$，$n_{d\sigma}=d^{\dag}_{\sigma}d_{\sigma}$为杂质电子的粒子数算符，$U$为杂质能级被又占据时的为库仑排斥能。$c^{\dag}_{k\sigma}(c_{k\sigma})$算符产生（湮灭）一个动量为$k$，自旋为$\sigma$的库电子，$\varepsilon_{k\sigma}$为库电子的色散关系。最后一项哈密顿量$H_{\rm{hyb}}$描述了杂质电子与库电子的耦合，耦合强度为$V_{kd}$。
 \subsection{近藤效应}
 \section{量子点系统中的近藤效应}
 \subsection{量子点}
