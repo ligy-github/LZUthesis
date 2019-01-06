@@ -158,3 +158,5 @@ $RECYCLE.BIN/
 #backup
 *.bak
 *.lyx~
+*.pdf
+Thesis.pdf
